@@ -13,15 +13,18 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "ebayer"
   gem.homepage = "http://github.com/kranthicu/ebayer"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Ebay API now made easy for rubyists and rails}
+  gem.description = %Q{This gem intended to use Ebay API withint ruby/rails applications}
   gem.email = "kranthicu@gmail.com"
   gem.authors = ["kranthicu"]
-  # dependencies defined in Gemfile
+  gem.files = Dir["{lib}/**/*"]
+  gem.add_development_dependency "httparty", ">= 0"
+  gem.add_development_dependency "json", ">= 0"
+  gem.add_development_dependency "hashie", ">= 0"
+  gem.add_development_dependency "rspec"
 end
 Jeweler::RubygemsDotOrgTasks.new
 
