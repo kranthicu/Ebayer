@@ -2,10 +2,11 @@
 
 Using ebayer is very simple. Please follow these beneath steps and we are all set to get the open ebay api working.
 
-ebay = Ebay.new("http://open.api.sandbox.ebay.com/shopping", "MethodName","response type", "version", "app id", "username")
+ebay = Ebayer::OpenEbay.new("GetUserProfile", "<app id>", "TESTUSER_magickbookseller")
+
 This init method will be futher improvised and will be configurable. Its just matter of time :)
 
-ebay.get_user_information
+ebay.user_information
 
 This method will retrive the user details
 
